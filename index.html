@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="lib/ol.css">
     <meta charset="UTF-8">
     <title>Final InfoVis Project</title>
 
 </head>
 <body>
-<div id="container">
-    <div id="map"></div>
+<div id="municipality_map_container">
+    <div id="municipality_map"></div>
     <div id="stats_container"></div>
 </div>
+<div id="bus_map" class="map"></div>
 
-
+<script src="lib/ol.js"></script>
 <script src="lib/d3.min.js"></script>
-<script src="js/init.js"></script>
-<script src="js/index.js"></script>
+<script type="module" src="js/init.js"></script>
+<script type="module" src="js/index.js"></script>
+<script type="module" src="js/busMap.js"></script>
 </body>
 </html>
