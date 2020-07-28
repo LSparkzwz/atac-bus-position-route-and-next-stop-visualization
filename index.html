@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/ol.css" rel="stylesheet" type="text/css">
-=======
-    <link rel="stylesheet" type="text/css" href="lib/ol.css">
->>>>>>> 19a26738b70e77618556893b774aafad3712d7cd
     <meta charset="UTF-8">
     <title>Final InfoVis Project</title>
 
@@ -15,39 +12,37 @@
     <div id="municipality_map"></div>
     <div id="stats_container"></div>
 </div>
-<div id="bus_map" class="map"></div>
 
-<<<<<<< HEAD
 <div class="map" id="bus_map">
     <div id="popup"></div>
 </div>
 <div id="route_select">
-    <div class="dropdown_content" id="dropdown">
-        <input id="route_search" onclick="" onkeyup="" placeholder="Search Route.." type="text">
-        <div id="search_list">
-            <option class="route_choice" value="beverages">Beverages</option>
-            <option value="snacks">Snacks</option>
-            <option value="beverages">Beverages</option>
-            <option value="snacks">Snacks</option>
-            <option value="beverages">Beverages</option>
-            <option value="snacks">Snacks</option>
-            <option value="beverages">Beverages</option>
-            <option value="snacks">Snacks</option>
+    <div>
+        <div style="display: flex; flex-direction: row; justify-content:space-between;">
+            <input class="searcher" id="route_search" onclick="" onkeyup="" placeholder="Route.."
+                   style="display: flex; flex-grow: 1"
+                   type="text">
+            <!--            <button style="width: 40%;" type="submit"><i class="fa fa-search"></i></button>-->
         </div>
+        <div class="search_list" id="route_search_list"></div>
+    </div>
+    <div style="height: 10px;"></div>
+    <div id="destination_search_container">
+        <div style="display: flex; flex-direction: row; justify-content:space-between;">
+            <input class="searcher" id="destination_search" onclick="" onkeyup="" placeholder="Destination.."
+                   style="display: flex; flex-grow: 1"
+                   type="text">
+            <!--            <button style="width: 40%;" type="submit"><i class="fa fa-search"></i></button>-->
+        </div>
+        <div class="search_list" id="destination_search_list"></div>
     </div>
 </div>
+
 
 <script src="lib/ol.js"></script>
 <script src="lib/d3.min.js"></script>
 <script src="js/init.js" type="module"></script>
 <script src="js/index.js" type="module"></script>
 <script src="js/busMap.js" type="module"></script>
-=======
-<script src="lib/ol.js"></script>
-<script src="lib/d3.min.js"></script>
-<script type="module" src="js/init.js"></script>
-<script type="module" src="js/index.js"></script>
-<script type="module" src="js/busMap.js"></script>
->>>>>>> 19a26738b70e77618556893b774aafad3712d7cd
 </body>
 </html>
