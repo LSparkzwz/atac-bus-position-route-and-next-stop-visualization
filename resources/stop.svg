@@ -2,7 +2,11 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="30px"
+<<<<<<< HEAD
+     height="30px" opacity="0.85">
+=======
      height="30px" opacity="0.55">
+>>>>>>> 19a26738b70e77618556893b774aafad3712d7cd
 <polyline style="fill:#4DBAF6;" points="232,502 232,350 280,350 280,502 "/>
     <path style="fill:#FFC66C;" d="M348,10H164c-26.51,0-48,21.49-48,48v244c0,26.51,21.49,48,48,48h184c26.51,0,48-21.49,48-48V58
 	C396,31.49,374.51,10,348,10z"/>

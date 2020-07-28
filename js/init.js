@@ -35,7 +35,47 @@ let busMapInit = () => {
         .style("display", 'flex')
         .style("width", '100%')
         .style("height", '100%')
+<<<<<<< HEAD
+    d3.select("#popup")
+        .style("background", "White")
+        .style("padding", "5px")
+        .style("border-radius", "4px")
+        .style("text-align", "center")
+        .style("border-style", "solid")
+        .style("border-width", "1px")
+        .style("border-color", "#171b21")
+        .style("font-family", 'Arial, Helvetica, sans-serif')
+    d3.select("#route_select")
+        .style("position", "absolute")
+        .style("top", 0)
+        .style("right", 0)
+        .style("background", "White")
+        .style("width", '10%')
+        .style("height", '10%')
+        .style("border-radius", "0px 0px 0px 8px")
+        .style("border-left", "1px solid #171b21")
+        .style("border-bottom", "1px solid #171b21")
+        .style("font-family", 'Arial, Helvetica, sans-serif')
+        .style("padding", "15px")
+    d3.select("#route_search")
+        .style("margin", 0)
+    d3.select("#search_list")
+        .style("border", "1px solid #cdc7c2")
+        .style("background", "White")
+        .style("padding", "3px")
+    d3.select(".route_choice")
+        .on("mouseover", function (d, i) {
+            console.log(d, i)
+            d3.select(this).style("background-color", "#2980B9")
+        })
+        .on("mouseout", () => {
+        });
+
 }
 
+=======
+}
+
+>>>>>>> 19a26738b70e77618556893b774aafad3712d7cd
 
 export {indexInit, municipalityMapInit, busMapInit}
