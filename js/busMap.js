@@ -13,9 +13,9 @@ let start = ol.proj.fromLonLat([12.4964, 41.9028])
 let end = ol.proj.fromLonLat([12.5074, 41.9028])
 
 let busMap = () => {
+    busMapInit()
     tile = new ol.layer.Tile({source: new ol.source.OSM()})
     initMap(tile)
-    busMapInit()
     d3.json("./data/bus_feed.json").then(initData);
 }
 
