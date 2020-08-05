@@ -8,26 +8,6 @@ let indexInit = () => {
         .style("padding", "0px")
 }
 
-let municipalityMapInit = () => {
-    d3.select("#bus_map")
-        .style('display', 'none')
-    d3.select("#municipality_map_container")
-        .style("display", 'flex')
-        .style("width", '100%')
-        .style("height", '100%')
-    d3.select("#municipality_map")
-        .style("display", 'flex')
-        .style("align-items", "center")
-        .style("justify-content", "center")
-        .style('flex-grow', '1')
-        .style('flex-basis', 0)
-        .style('background-color', "#24292e")
-    d3.select("#stats_container")
-        .style('flex-grow', '1')
-        .style('flex-basis', 0)
-        .style('background-color', "#1e2226")
-}
-
 let busMapInit = () => {
     d3.select("#municipality_map_container")
         .style("display", 'none')
@@ -91,10 +71,9 @@ let busMapInit = () => {
         .style("background", "White")
         .style("width", '20%')
         .style("border-radius", "0px 0px 0px 8px")
-        .style("border-left", "1px solid #171b21")
-        .style("border-bottom", "1px solid #171b21")
         .style("font-family", 'Arial, Helvetica, sans-serif')
         .style("padding", "15px")
+        .style("box-shadow", "0 0 15px rgba(0,0,0,0.2)")
     d3.selectAll(".searcher")
         .style("width", "40%")
     d3.selectAll(".search_list")
@@ -102,11 +81,49 @@ let busMapInit = () => {
         .style("background", "White")
         .style("padding", "3px")
         .style("max-height", "30vh")
-        .style("overflow", "scroll")
+        .style("overflow-y", "auto")
         .style("overflow-x", "hidden")
         .style("display", "none")
-    d3.select(".route_choice")
+    d3.select("#sec_info_container")
+        .style("position", "absolute")
+        .style("bottom", 0)
+        .style("right", 0)
+        .style("width", '30%')
+        .style("background", "White")
+        .style("font-family", 'Arial, Helvetica, sans-serif')
+        .style("padding", "15px")
+        .style("border-radius", "8px 0px 0px 0px")
+        .style("box-shadow", "0 0 15px rgba(0,0,0,0.2)")
+    d3.select("#alert_button")
+        .style("position", "absolute")
+        .style("bottom", 0)
+        .style("left", 0)
+        .style("box-shadow", "0 0 15px rgba(0,0,0,0.2)")
+        .style("width", '60px')
+        .style("height", '60px')
+        .style("border-radius", "0px 8px 0px 0px")
+        .style("background", "White")
+        .style("display", "flex")
+        .style("justify-content", "center")
+        .style("align-items", "center")
+        .append("img")
+        .attr("src", "./resources/alert.svg")
+        .style("width", "80%")
+    d3.select("#alert_button")
+        .on("click", () => {
+            d3.select("#alert_info").style("display", "block")
+            d3.select("#alert_button").style("display", "none")
+        })
+
+    d3.select("#alert_info")
+        .style("box-shadow", "0 0 15px rgba(0,0,0,0.2)")
+        .style("border-radius", "8px 8px 8px 8px")
+        .style("background", "White")
+        .style("font-family", 'Arial, Helvetica, sans-serif')
+        .style("padding", "10px")
+
+
 }
 
 
-export {indexInit, municipalityMapInit, busMapInit}
+export {indexInit, busMapInit}
